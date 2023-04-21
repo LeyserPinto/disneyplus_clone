@@ -1,0 +1,19 @@
+
+$corDeFundo: #040714;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+$corDeFundoBotaoPrimario: #6421ff;
+$corDeFundoBotaoSecundario: #0063e5;
+$corDeFundoBotaoDark: #000;
+
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}

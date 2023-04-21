@@ -1,0 +1,32 @@
+@use 'utilities.scss';
+@use '_hero.scss';
+body {
+    background-color: utilities.$corDeFundo;
+}
+
+//Text Class
+.text--big {
+    @include utilities.text(18px);
+}
+.text--medium {
+    @include utilities.text;
+}
+.text--small {
+    @include utilities.text(12px);
+}
+
+//Titles Class
+.title--big {
+    @include utilities.title(18px);
+}
+.title--medium {
+    @include utilities.title;
+}
+.title--small {
+    @include utilities.title(12px);
+}
+
+.link-text {
+    @include utilities.text(18px);
+    color: utilities.$corTextoSecundario;
+}

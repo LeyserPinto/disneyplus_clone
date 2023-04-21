@@ -1,5 +1,14 @@
-@use 'utilities.scss';
-@use '_hero.scss';
+@use 'utilities';
+@use 'hero';
+@use 'shows';
+@use 'plans';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: utilities.$fontPrincipal;
+    
+}
 body {
     background-color: utilities.$corDeFundo;
 }
